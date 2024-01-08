@@ -34,6 +34,15 @@ public class Line_Comparison_Problem {
             System.out.println("Lines are equal");
         else
         	 System.out.println("Lines are not equal");
+        
+        int value = lenOfLineFirst.compareTo(lenOfLineSecond);
+        if (value < 0) {
+            System.out.println("Length of first line less than second line");
+        } else if (value > 0) {
+            System.out.println("Length of second line greater than first line");
+        } else {
+            System.out.println("Both lines are equal");
+        }
 	}
 
 	public static void main(String[] args) {
